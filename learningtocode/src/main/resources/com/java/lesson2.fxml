@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="354.0" prefWidth="432.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.zL2Controller">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Lessons">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#actionChangeToLS" text="Lesson Selector" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Settings">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#actionRestartApplication" text="Restart" />
+              <MenuItem mnemonicParsing="false" onAction="#actionCloseApplication" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox prefHeight="63.0" prefWidth="416.0" spacing="30.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Print Command Test 1:" />
+            <Button mnemonicParsing="false" onAction="#actionCheck1" text="Check" />
+            <TextField fx:id="printCheck1" text="Not Tested" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+      <TextField fx:id="printLine1" editable="false" promptText="Printed Text">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Print Command Test 2:" />
+            <Button mnemonicParsing="false" onAction="#actionCheck2" text="Check" />
+            <TextField fx:id="printCheck2" editable="false" text="Not Tested" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </HBox>
+      <TextField fx:id="printLine2" editable="false" promptText="Printed Text">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Print Command Test 3:" />
+            <Button mnemonicParsing="false" onAction="#actionCheck3" text="Check" />
+            <TextField fx:id="printCheck3" editable="false" text="Not Tested" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </HBox>
+      <TextField fx:id="printLine3" editable="false" promptText="Printed Text">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </VBox.margin>
+      </TextField>
+   </children>
+</VBox>
