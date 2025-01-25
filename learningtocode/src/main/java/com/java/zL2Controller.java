@@ -139,6 +139,11 @@ public class zL2Controller {
         printLine2.setEditable(false); //sets printLine1 to uneditable
     }
 
+    /**
+     * This code will run when you click the third test button
+     * this will take the student code and make sure that they wrote it out properly
+     * then it will update if the task was done sucessfully or not and then change the TextAreas accordingly
+     */
     @FXML
     private void actionCheck3(){
         //gets printed line from Student Code
@@ -178,26 +183,35 @@ public class zL2Controller {
         printLine3.setEditable(false); //sets printLine1 to uneditable
     }
 
+
 //----------------------------------------------------------------Changing Lessons----------------------------------------------------------
 
+    /**
+     * This changes the application to the lesson selector 
+     * @throws IOException
+     */
     @FXML
     private void actionChangeToLS() throws IOException{
-        zLSMethods.lessonSelector();
+        zLSMethods.lessonSelector(); //calls upon the swap method from zLSMethods
     }
 
 //---------------------------------------------------------------Settings Options----------------------------------------------------------
 
-    @FXML
+    /**
+     * This resets the application to update for the new code
+     * @throws IOException
+     */
+    /* @FXML
     private void actionRestartApplication() throws IOException{
-        zLSMethods.restartApplication();
-    }
+        zLSMethods.restartApplication(); //calls upon the restart method in zLSMethods
+    } */
 
+    /**
+     * this safely closes the application
+     * @throws IOException
+     */
     @FXML
     private void actionCloseApplication() throws IOException{
-        zLSMethods.closeApplication();
+        zLSMethods.closeApplication(); //calls upon the close method in zLSMethods
     }
 }
-
-/* NOTES:
- * printCheck1.setEditable(false/true);
- */
