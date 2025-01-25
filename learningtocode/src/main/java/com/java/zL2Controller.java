@@ -57,7 +57,7 @@ public class zL2Controller {
         //sets the output stream to something that we can use
         printStream = new PrintStream(temp); //links printStream to outputstream
         System.setOut(printStream); //sets Outputstream to printStream
-        filescr = new Scanner(temp);
+        filescr = new Scanner(temp); //scan output file
     }
 
     /**
@@ -201,10 +201,10 @@ public class zL2Controller {
      * This resets the application to update for the new code
      * @throws IOException
      */
-    /* @FXML
+    @FXML
     private void actionRestartApplication() throws IOException{
-        zLSMethods.restartApplication(); //calls upon the restart method in zLSMethods
-    } */
+        //zLSMethods.restartApplication(); //calls upon the restart method in zLSMethods
+    }
 
     /**
      * this safely closes the application
